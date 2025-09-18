@@ -37,26 +37,47 @@
 
             int numOfMinutes;
             double parkingCost;
+
+            parkingCost = 2;
             
             Console.WriteLine("How long did you leave your car for at the parking garage?");
             int.TryParse(Console.ReadLine(), out numOfMinutes);
 
             if (numOfMinutes < 60)
             {
-                Console.WriteLine("You are only charged for  $4.00");
-
+                Console.WriteLine("You are only charged for $4.00");
             }
-            else if (numOfMinutes > 60)
+            else if (numOfMinutes > 60 && numOfMinutes < 120)
             {
-                Console.WriteLine("You are charged for $ 6.00");
+                Console.WriteLine("You are charged for $6.00");
             }
-            else if (numOfMinutes > 120)
+            else if (numOfMinutes > 120 && numOfMinutes < 180)
             {
                 Console.WriteLine("You are charged for $8.00");
             }
-            else if (numOfMinutes > 180)
+            else if (numOfMinutes > 180 && numOfMinutes < 240)
             {
                 Console.WriteLine("You are charged for $10.00");
+            }
+            else if (numOfMinutes > 240 && numOfMinutes < 300)
+            {
+                Console.WriteLine("You are charged for $12.00");
+            }
+            else if (numOfMinutes > 300 && numOfMinutes < 360)
+            {
+                Console.WriteLine("You are charged for $14.00");
+            }
+            else if (numOfMinutes > 360 && numOfMinutes < 420)
+            {
+                Console.WriteLine("You are charged for $16.00");
+            }
+            else if (numOfMinutes > 420 && numOfMinutes < 480)
+            {
+                Console.WriteLine("You are charged for $18.00");
+            }
+            else if (numOfMinutes > 480 && numOfMinutes <  540)
+            {
+                Console.WriteLine("You are charged for $20.00");
             }
            
         }
